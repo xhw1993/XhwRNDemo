@@ -17,14 +17,15 @@ const instructions = Platform.select({
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
+g
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome} onPress={() => {
-          Push.RNOpenOneVC('测试')
+          console.log('测试git 开一个分支')
+          Push.RNOpenOneVC('你好')
         }}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
